@@ -3,10 +3,15 @@ __pycache__/
 *.py[cod]
 *.so
 
-# Ignore virtual environment
+# Ignore virtual environments
 venv/
 env/
-*.venv
+*.venv/
+*/venv/
+*/env/
+venv312/
+backend/venv*/
+backend/.venv/
 
 # Ignore system-specific files
 .DS_Store
@@ -18,15 +23,25 @@ Thumbs.db
 
 # Ignore Flask uploads folder
 uploads/
+backend/uploads/
 
 # Ignore frontend build files
 frontend/node_modules/
 frontend/build/
+frontend/.env
+frontend/.env.*
+backend/.env
 
 # Ignore dependency files
 *.lock
 package-lock.json
 pip-log.txt
+
+# Python cache and build
+**/__pycache__/
+*.egg-info/
+dist/
+build/
 
 # Ignore IDE/editor specific files
 .vscode/

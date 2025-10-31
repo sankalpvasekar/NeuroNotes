@@ -1,0 +1,8 @@
+frontend-
+ cd frontend  
+ npm start
+
+backend-
+Invoke-Expression ".\\venv312\\Scripts\\python app.py"
+cd backend
+python app.py
